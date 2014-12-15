@@ -1,8 +1,14 @@
 /*
+	Task:
+		Find possible index of value in a sorted array
+
 	Description:
 		Given a sorted array and a target value, return the index if the target is found. 
 		If not, return the index where it would be if it were inserted in order. 
 		You may assume no duplicates in the array.
+		
+	Interface to be implemented:
+		public int searchInsert(int[] A, int target)
 	
 	Examples:
 	
@@ -31,7 +37,7 @@
 			Output:
 				0
 */
-	public int searchInsert(int[] A, int target) {
+    public int searchInsert(int[] A, int target) {
         if(A==null||A.length==0){
         	return 0;
         }
