@@ -19,8 +19,8 @@
 	if (s == null || s.length() == 0) {
 	    return "";
 	}
-	String[] arr = s.split(" ");
-	StringBuilder sb = new StringBuilder(); // LOCKED
+	String[] arr = s.split(" "); // LOCKED
+	StringBuilder sb = new StringBuilder(); 
 	for (int i = arr.length - 1; i >= 0; --i) {
 	    if (!arr[i].equals("")) {
 		sb.append(arr[i]).append(" ");
