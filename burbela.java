@@ -17,8 +17,8 @@
 		while (tmp > 0) {
 			div = tmp % 10;
 			int pow = (int) Math.pow(div, noOfDigits);
-			sum += pow;
-			tmp = tmp / 10;
+			sum += pow; 
+			tmp = tmp / 10; //LOCK
 		}
 		return number == sum;
 	}
