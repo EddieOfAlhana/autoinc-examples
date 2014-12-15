@@ -22,8 +22,8 @@ output: 1001
 public void printBinaryFormat(int number){
     int binary[] = new int[25];	//LOCK
     int index = 0;        
-    if (number == 0) {	//LOCK
-        binary[1] = 0;
+    if (number == 0) { 	
+        binary[1] = 0; //LOCK
         index = 1;
     }
     while(number > 0){
