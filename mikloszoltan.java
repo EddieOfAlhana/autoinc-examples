@@ -1,7 +1,13 @@
 /*
+Task: 
+Check if number is a perfect number
+
 Description:  Check if a number is perfect. A perfect number is a positive integer that is equal to the sum
 of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself. 
 The first perfect number is 6, because 1, 2 and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. 
+
+Interface to be implemented:
+public boolean isPerfectNumber(int number)
 
 Examples:
 1)
