@@ -22,7 +22,7 @@ output: false
 */
 	
 public boolean isPerfectNumber(int number){
-   boolean isPositive = number > 0;
+   boolean isPositive = number > 0; //LOCK
    int sum = 0;
    for( int i = 1; i <= number/2; i++){
       if(number % i == 0) {
