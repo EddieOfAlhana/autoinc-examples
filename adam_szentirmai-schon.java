@@ -1,5 +1,5 @@
 /*
- * Feladat neve: Properly nested paretheses
+ * Task: Properly nested paretheses
  * Description: 
  * A String s is properly nested, if:
  *      s is empty, or
@@ -7,7 +7,9 @@
  *      s has the form of UV
  *      (where U, V are also properly nested strings)
  * Write a method that returns 1, it its argument String is properly nested, return 0 otherwise!
- *     
+ *    
+ * Interface to be implemented:
+ * public int solution(final String S)
  * 
  * Examples:
  *      1)
