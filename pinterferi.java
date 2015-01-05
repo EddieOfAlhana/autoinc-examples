@@ -1,5 +1,12 @@
 /*
-Description: Write a program to convert not negative decimal number to binary format using numeric operations.
+Task:
+Convert decimal to to binary
+
+Description:
+Write a program to convert not negative decimal number to binary format using numeric operations.
+
+Interface to be implemented:
+public void printBinaryFormat(int number)
 
 Examples:
 1)
