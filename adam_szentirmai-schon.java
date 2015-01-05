@@ -19,37 +19,21 @@
  *      3)
  *      Input: "{[()()]})]"; Result: 0;
  */
-
-public int solution(final String S) {
-    char[] input = S.toCharArray(); //LOCK
-    Deque<Character> stack = new ArrayDeque<>();
-    for (int i = 0; i < input.length; i++) {
-        char ch = input[i];
-        switch (ch) { //LOCK
-            case '(': //LOCK
-            case '[': //LOCK
-            case '{': //LOCK
-                stack.addFirst(ch);
-                break;
-            case ')': //LOCK
-                if (!(stack.size() > 0 && '(' == stack.pop())) {
-                    return 0;
-                }
-                break;
-            case ']': //LOCK
-                if (!(stack.size() > 0 && stack.pop() == '[')) {
-                    return 0;
-                }
-                break;
-            case '}': //LOCK
-                if (!(stack.size() > 0 && stack.pop() == '{')) {
-                    return 0;
-                }
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid input");
-                }
-        }//LOCK
-    return stack.size() == 0 ? 1 : 0;
-    }
+	public boolean isProperlyNested(final String str) {
+		Map<Character, Character> pairs = new HashMap<>();
+		pairs.put('(', ')'); // LOCK
+		pairs.put('[', ']'); // LOCK
+		pairs.put('{', '}');
+		Deque<Character> stack = new ArrayDeque<>();
+		for (char symbol : str.toCharArray()) {
+			if (pairs.containsKey(symbol)) {
+				stack.push(pairs.get(symbol));
+			} else {
+				if (stack.size() < 1 || symbol != stack.poll()) {
+					return false;
+				}
+			}
+		}
+		return stack.size() == 0;
+	}
 }
