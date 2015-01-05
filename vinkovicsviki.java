@@ -1,5 +1,12 @@
 /*
+Task: 
+Convert binar to decimal
+
+Description:
 Write a program to convert binary format to decimal number using numeric operations.
+
+Interface to be implemented:
+public int getDecimalFromBinary(int binary)
      
 Examples: 
 	1) 
