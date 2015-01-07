@@ -1,11 +1,14 @@
     /*
+    	Task:
 	Reverse words in a string
 	
 	Description:
 	Given an input string, reverse the string word by word.
 	
-	Examples:
+	Interface to be implemented:
+	public String reverseWords(String s)
 	
+	Examples:
 	1)
 	input: 	"the sky is blue"
 	output:	"blue is sky the"

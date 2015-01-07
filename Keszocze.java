@@ -1,6 +1,7 @@
-/*
+﻿/*
 Find the line with maximum number of word count in the given file.
 In case if it has multiple lines with max number of words, then it has to list all those lines.
+
 
 Examples:
 But since some light comes through the closed eyelids, a still greater degree 
@@ -19,6 +20,7 @@ it at times, and from it most patients are able to get a considerable degree
 
 
 */
+
 	public List<String> longestLines(String fileName) throws IOException {  //LOCKED!
 		int currentMaxCount = 0;
 		List<String> lines = new ArrayList<String>();
@@ -36,6 +38,7 @@ it at times, and from it most patients are able to get a considerable degree
 					lines.add(line);
 				}
 			}
+
 		}
 		return lines;
 	}
